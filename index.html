@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Festivals of India</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Festivals of India</h1>
+      <p>Explore the vibrant festivals celebrated across India!</p>
+    </header>
+
+    <!-- Image Carousel -->
+    <!-- Image Carousel -->
+    <div class="carousel">
+      <div class="carousel-images">
+        <div class="carousel-item">
+          <img src="ganesha.jpg" alt="Festival 1" />
+          <div class="carousel-text">
+            People with all facilities celebrate, but have you thought of poor
+            people? Think again before wasting food and sweets on the
+            festivals... Please donate the remaining instead of pouring down or
+            throwing away!
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="diwalii.jpg!w700wp" alt="Festival 2" />
+          <div class="carousel-text">
+            People with all facilities celebrate, but have you thought of poor
+            people? Think again before wasting food and sweets on the
+            festivals... Please donate the remaining instead of pouring down or
+            throwing away!
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="holii.jpg" alt="Festival 3" />
+          <div class="carousel-text">
+            People with all facilities celebrate, but have you thought of poor
+            people? Think again before wasting food and sweets on the
+            festivals... Please donate the remaining instead of pouring down or
+            throwing away!
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="pic1.jpg" alt="Festival 4" />
+          <div class="carousel-text">
+            People with all facilities celebrate, but have you thought of poor
+            people? Think again before wasting food and sweets on the
+            festivals... Please donate the remaining instead of pouring down or
+            throwing away!
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="pic2.jpg" alt="Festival 5" />
+          <div class="carousel-text">
+            People with all facilities celebrate, but have you thought of poor
+            people? Think again before wasting food and sweets on the
+            festivals... Please donate the remaining instead of pouring down or
+            throwing away!
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="pic3.jpg" alt="Festival 6" />
+          <div class="carousel-text">
+            People with all facilities celebrate, but have you thought of poor
+            people? Think again before wasting food and sweets on the
+            festivals... Please donate the remaining instead of pouring down or
+            throwing away!
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="gnn.jpg" alt="Festival 7" />
+          <div class="carousel-text">
+            People with all facilities celebrate, but have you thought of poor
+            people? Think again before wasting food and sweets on the
+            festivals... Please donate the remaining instead of pouring down or
+            throwing away!
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="festival-grid">
+      <div class="festival-card" onclick="openFestival('Diwali')">
+        <img src=".vscode/diwali.jpg" alt="Diwali" />
+        <h2>Deepavali</h2>
+        <p>The festival of lights celebrated with diyas and sweets.</p>
+      </div>
+      <div class="festival-card" onclick="openFestival('Holi')">
+        <img src="holi.jpg" alt="Holi" />
+        <h2>Holi</h2>
+        <p>The festival of colors, celebrating the arrival of spring.</p>
+      </div>
+      <div class="festival-card" onclick="openFestival('Christmas')">
+        <img src="christmas.jpg" alt="Christmas" />
+        <h2>Christmas</h2>
+        <p>Celebrated worldwide with joy, carols, and gifts!</p>
+      </div>
+      <div class="festival-card" onclick="openFestival('Ganesha Chaturthi')">
+        <img src="ganesha.jpg" alt="Ganesha Chaturthi" />
+        <h2>Ganesha Chaturthi</h2>
+        <p>
+          A festival celebrating the birth of Lord Ganesha with grand
+          processions.
+        </p>
+      </div>
+      <div class="festival-card" onclick="openFestival('Ugadi')">
+        <img src="ugadi.jpg" alt="Ugadi" />
+        <h2>Ugadi</h2>
+        <p>The New Year festival celebrated in Karnataka and Andhra Pradesh.</p>
+      </div>
+      <div class="festival-card" onclick="openFestival('New Year')">
+        <img src="newyear.jpg" alt="New Year" />
+        <h2>New Year</h2>
+        <p>
+          Celebrated with parties, feasts, and resolutions for the upcoming
+          year!
+        </p>
+      </div>
+    </section>
+
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span class="close-btn" onclick="closeModal()">&times;</span>
+        <h2 id="festival-name"></h2>
+        <p id="festival-description"></p>
+        <img id="festival-image" src="" alt="" />
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

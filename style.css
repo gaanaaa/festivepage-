@@ -1,0 +1,147 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Header */
+header {
+  text-align: center;
+  padding: 2em;
+  background-color: #ff6347;
+  color: white;
+}
+
+header h1 {
+  font-size: 2.5em;
+  margin-bottom: 0.2em;
+}
+
+header p {
+  font-size: 1.2em;
+}
+
+/* Carousel Styles */
+.carousel {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  max-height: 900px;
+  margin: 2em 0;
+}
+
+.carousel-item {
+  position: relative;
+  display: inline-block; /* Adjust as needed for your carousel */
+  height: 900px; /* Set your desired height */
+  overflow: hidden; /* Ensure content doesn't overflow */
+}
+
+.carousel-text {
+  position: absolute;
+  bottom: 2px; /* Position it closer to the bottom */
+  left: 0; /* Align to the left */
+  width: 100%; /* Full width */
+  color: white; /* Change as needed for visibility */
+  padding: 10px;
+  font-size: 1.2em; /* Adjust size as needed */
+  text-align: left; /* Align text to the left */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  border-radius: 5px; /* Optional: rounded corners */
+}
+
+.carousel-images {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 700%; /* Adjust based on number of images */
+}
+
+.carousel img {
+  width: 100vw; /* Full viewport width */
+  height: auto; /* Maintain aspect ratio */
+  max-height: 800px; /* Limit height */
+  object-fit: cover;
+}
+
+/* Festival Grid */
+.festival-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5em;
+  padding: 2em;
+}
+
+/* Festival Card Styles */
+.festival-card {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.festival-card:hover {
+  transform: scale(1.05);
+}
+
+.festival-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.festival-card h2 {
+  color: #ff6347;
+  padding: 0.5em;
+}
+
+.festival-card p {
+  padding: 0 1em 1em;
+}
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: white;
+  padding: 2em;
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+  border-radius: 8px;
+  position: relative;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+.modal-content img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-top: 1em;
+}
